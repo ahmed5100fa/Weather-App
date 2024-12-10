@@ -8,7 +8,7 @@ const searchBtn = document.querySelector('.find');
 
 async function WeatherService(country = 'Cairo') {
     try {
-        const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=bc2568b46f424f0eb87123809240912&q=${country}&days=3&aqi=no&alerts=no`);
+        const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=bc2568b46f424f0eb87123809240912&q=${country}&days=2&aqi=no&alerts=no`);
         if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
         
         const data = await res.json();
